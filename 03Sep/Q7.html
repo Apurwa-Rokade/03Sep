@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-level Table of Contents</title>
+  <style>
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    .sublist {
+      display: none;
+      margin-left: 20px;
+    }
+    li:hover .sublist {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Multi-level Table of Contents</h1>
+
+<ul>
+  <li>Index Topic 1
+    <ul class="sublist">
+      <li>Subtopic 1.1</li>
+      <li>Subtopic 1.2
+        <ul class="sublist">
+          <li>Sub-subtopic 1.2.1</li>
+          <li>Sub-subtopic 1.2.2</li>
+        </ul>
+      </li>
+      <li>Subtopic 1.3</li>
+    </ul>
+  </li>
+  <li>Index Topic 2
+    <ul class="sublist">
+      <li>Subtopic 2.1</li>
+      <li>Subtopic 2.2</li>
+    </ul>
+  </li>
+  <!-- Add more index topics and subtopics as needed -->
+</ul>
+
+</body>
+</html>
